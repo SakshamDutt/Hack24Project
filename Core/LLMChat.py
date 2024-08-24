@@ -3,7 +3,6 @@ from langchain_ollama.llms import OllamaLLM
 
 model = OllamaLLM(model="mistral")
 
-def generate_response( task, answerclass ):
+def generate_response( task ):
     response = model.invoke(task)
-    print(response)
-    answerclass.content
+    return response
