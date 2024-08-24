@@ -108,6 +108,7 @@ body {
     padding: 10px;
     overflow-y: auto;
     flex: 1;
+    scroll-behavior: smooth;
 }
 
 .message {
