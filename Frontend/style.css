@@ -142,6 +142,9 @@ body {
     background-color: #d1e8b2;
 }
 
+.right, .left {
+    transition: 400ms;
+}
 .message-file {
     display: flex;
     align-items: center;

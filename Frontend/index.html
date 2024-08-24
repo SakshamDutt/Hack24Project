@@ -18,13 +18,16 @@
         </div>
         <div class="chat-container">
             <div class="chat-body">
-                <div class="message left hidden">
-                    <div class="message-text"></div>
+                {% if question %}
+                <div class="message right">
+                    <div class="message-text">{{ question }}</div>
                 </div>
-                <div class="message right hidden">
-                    <div class="message-text"></div>
-                </div>
-                
+                {% endif %}
+                {% if answer %}
+                    <div class="message left">
+                        <div class="message-text">{{ answer }}</div>
+                    </div>
+                {% endif %}
             </div>
             <div class="chat-footer">
                 <form method="POST" action="{% url 'homeView' %}">
