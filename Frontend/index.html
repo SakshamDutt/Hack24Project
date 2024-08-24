@@ -27,8 +27,11 @@
                 
             </div>
             <div class="chat-footer">
-                <input type="text" placeholder="Ask anything to Mindful." class="message-input">
-                <button class="send-button">➤</button>
+                <form method="POST" action="{% url 'homeView' %}">
+                    {% csrf_token %}
+                    <input type="text" name="user_input" placeholder="Ask anything to Mindful." class="message-input">
+                    <button type="submit" class="send-button">➤</button>
+                </form>
             </div>
         </div>
         <div class="notes-container">
