@@ -11,4 +11,4 @@ def homeView(request) -> HttpResponse:
     if request.method == 'POST':
         Question = request.POST.get('user_input')
         Answer = generate_response(Question)
-    return render(request,"index.html", {'question': Question, 'answer':Answer})
+    return render(request,"index.html", {'question':Question,'answer':Answer})

@@ -18,9 +18,11 @@
         </div>
         <div class="chat-container">
             <div class="chat-body" id="chat--body">
-                <!-- <div class="message right #user-message">
-                    <div class="message-text"></div>
-                </div> -->
+                {% if answer %}
+                    <div class="message right #user-message">
+                        <div class="message-text">{{ question }}</div>
+                    </div>
+                {% endif %}
                 {% if answer %}
                     <div class="message left">
                         <div class="message-text">{{ answer }}</div>
