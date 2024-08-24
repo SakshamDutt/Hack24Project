@@ -1,17 +1,19 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Interface</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
     
     <div class="container">
         <div class="nav">
             <div class="chat-header">
-                <img src="./img/mindful-high-resolution-logo-transparent.png" alt="" srcset="">
+                <img src="/img/mindful-high-resolution-logo-transparent.png" alt="" srcset="">
             </div>
         </div>
         <div class="chat-container">
