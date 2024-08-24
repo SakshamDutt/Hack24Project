@@ -142,9 +142,13 @@ body {
 .right .message-text {
     background-color: #d1e8b2;
 }
+.right .message-text, .left .message-text {
+    font-size: 18px;
+}
 
 .right, .left {
     transition: 400ms;
+    line-height: 24px;
 }
 .message-file {
     display: flex;
@@ -242,7 +246,7 @@ body {
     width: 85%;
     line-height: 28px;
     color: #333;
-    margin-bottom: 15px;
+    margin-top: 20px;
 }
 .notes-container img {
     width:60px
