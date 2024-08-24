@@ -17,12 +17,10 @@
             </div>
         </div>
         <div class="chat-container">
-            <div class="chat-body">
-                {% if question %}
-                <div class="message right">
-                    <div class="message-text">{{ question }}</div>
-                </div>
-                {% endif %}
+            <div class="chat-body" id="chat--body">
+                <!-- <div class="message right #user-message">
+                    <div class="message-text"></div>
+                </div> -->
                 {% if answer %}
                     <div class="message left">
                         <div class="message-text">{{ answer }}</div>
@@ -46,6 +44,6 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="{% static 'script.js' %}"></script>
 </body>
 </html>
