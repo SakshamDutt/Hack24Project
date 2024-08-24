@@ -188,6 +188,11 @@ body {
     align-items: center;
 }
 
+.chat-footer form {
+    width: 100%;
+    display: flex;
+}
+
 .chat-footer input::placeholder{
     color: #989898;
 }
