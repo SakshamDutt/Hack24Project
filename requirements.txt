@@ -1,2 +1,6 @@
 
 django == 5.1
+langchain
+langchain_ollama
+langchain_community
+pypdf
