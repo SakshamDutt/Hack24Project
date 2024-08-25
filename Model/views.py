@@ -5,12 +5,14 @@ from threading import Thread
 from dataclasses import dataclass
 from django.core.files.storage import FileSystemStorage
 
-Notes = "Unedited"
+Notes = "Upload file and wait for generation."
+Title = "Upload File TO generate"
 
 # Create your views here.
 def homeView(request) -> HttpResponse:
     Question = None
     Answer = None
+    global Title, Notes
     if request.method == 'POST' or request.FILES.get('file'):
         if request.FILES.get('file'):
             file = request.FILES['file']
@@ -19,8 +21,7 @@ def homeView(request) -> HttpResponse:
                 filename = fs.save(file.name, file)
                 global Notes 
                 Notes = generate_notes_from_pdf(file.name)
-                with open("Notes.txt", 'w') as txtfile:
-                    txtfile.write(Notes)
+                Title = file.name
             else:
                 return HttpResponse("Only PDF files are allowed.")
         Question = request.POST.get('user_input')
@@ -28,4 +29,4 @@ def homeView(request) -> HttpResponse:
             Answer = generate_response(Question, Notes)
         else:
             Question = None
-    return render(request,"index.html", {'question':Question,'answer':Answer})
+    return render(request,"index.html", {'question':Question,'answer':Answer, 'title':Title, 'Note':Notes})
