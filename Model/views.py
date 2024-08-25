@@ -19,7 +19,7 @@ def homeView(request) -> HttpResponse:
                 filename = fs.save(file.name, file)
                 global Notes 
                 Notes = generate_notes_from_pdf(file.name)
-                with open("Generated.txt", 'w') as txtfile:
+                with open("Notes.txt", 'w') as txtfile:
                     txtfile.write(Notes)
             else:
                 return HttpResponse("Only PDF files are allowed.")
