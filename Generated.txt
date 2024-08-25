@@ -1,0 +1,47 @@
+ Title: Understanding a Research Document for Neuro-diverse Students
+
+   Introduction:
+   This document contains information about how to create different parts of a research paper using Overleaf, a program that helps you write your document. You'll learn about sections, subsections, figures, tables, comments, and track changes. You will also discover how to make lists, write mathematics, change margins and paper size, modify the language settings, add citations, and create references.
+
+   Sections & Subsections:
+   - To create sections in your document, use the section command.
+   - For subsections, utilize the subsection command.
+
+   Figures:
+   - Upload images from your computer using the file-tree menu.
+   - Use the includegraphics command to add them to your document.
+   - Wrap your image with figure environment and caption command for numbering and captions.
+
+   Tables:
+   - Use table and tabular environments for basic tables.
+
+   Comments & Track Changes:
+   - Add comments using the "Add comment" button in the editor pane.
+   - View existing comments by clicking on the Review menu.
+   - Reply to a comment using the Reply button.
+   - Track changes are available on premium plans.
+
+   Lists:
+   - Make numbered lists like this,
+   1. Like this,
+   2. and like this.
+   - Use bullet points for items that don't need numbering,
+     •Like this,
+     •and like this.
+
+   Mathematics:
+   - LATEX is great at typesetting mathematics.
+
+   Margins & Paper Size:
+   - Follow the settings in your chosen template. If you want to alter margins, use the geometry package.
+
+   Language Settings & Spell Check:
+   - Edit the option provided to the babel package in the preamble at the top of the document for changing language.
+   - Change the spell check language through the Overleaf menu.
+
+   Citations & References:
+   - Upload a .bib file with your BibTeX entries.
+   - Specify a bibliography style and the filename of the .bib.
+
+   Conclusion:
+   We hope this guide helps you understand the structure and formatting of a research document using Overleaf. Don't hesitate to explore more in our help library or reach out to us with feedback. Happy writing!

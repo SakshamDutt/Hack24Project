@@ -1,7 +1,5 @@
 let question;
 
-
-
 function addMessage() {
     // Create a new div element for the message
     chatBody = document.getElementById('chat--body')
@@ -23,8 +21,6 @@ function displayInput() {
     question=inputValue
     addMessage()
 }
-
-
 
 function hide(){
     var inputElement = document.getElementById('hidden-element')
