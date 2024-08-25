@@ -245,10 +245,6 @@ body {
     flex-direction: row;
 }
 
-.pdf-notes {
-    flex: 9;
-}
-
 .form {
     align-self: flex-end;
 }
@@ -310,7 +306,7 @@ body {
 
 #pdf-notes {
     width: 100%;
-    height: 600px;
+    height: auto;
     overflow-y: scroll;
     padding: 0 30px;
 }
