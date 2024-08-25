@@ -108,6 +108,7 @@ body {
     padding: 10px;
     overflow-y: auto;
     flex: 1;
+    scroll-behavior: smooth;
 }
 
 .message {
@@ -141,9 +142,13 @@ body {
 .right .message-text {
     background-color: #d1e8b2;
 }
+.right .message-text, .left .message-text {
+    font-size: 18px;
+}
 
 .right, .left {
     transition: 400ms;
+    line-height: 24px;
 }
 .message-file {
     display: flex;
@@ -239,7 +244,7 @@ body {
     font-weight: 500;
     width: 85%;
     line-height: 28px;
-    color: #9e9e9e;
+    color: #333;
     margin-bottom: 15px;
 }
 .notes-container img {
