@@ -5,8 +5,8 @@ from threading import Thread
 from dataclasses import dataclass
 from django.core.files.storage import FileSystemStorage
 
-Notes = "Upload file and wait for generation."
-Title = "Upload File TO generate"
+Notes = ""
+Title = ""
 
 # Create your views here.
 def homeView(request) -> HttpResponse:
@@ -29,4 +29,4 @@ def homeView(request) -> HttpResponse:
             Answer = generate_response(Question, Notes)
         else:
             Question = None
-    return render(request,"index.html", {'question':Question,'answer':Answer, 'title':Title, 'Note':Notes})
+    return render(request,"index.html", {'question':Question,'answer':Answer, 'title':Title, 'notes':Notes})
