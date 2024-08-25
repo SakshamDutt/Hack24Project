@@ -26,14 +26,6 @@ function hide(){
     var inputElement = document.getElementById('hidden-element')
     const pdfElement = document.getElementById('pdf-notes')
 
-    if (!document.getElementById('title').value) {
-
-        inputElement.style.display='none'
-        pdfElement.style.display='block'
-    } else {
-        inputElement.style.display='block'
-        pdfElement.style.display='none' 
-    }
 
 
 
