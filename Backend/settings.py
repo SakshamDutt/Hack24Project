@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-wovv56g_@gu=ro6(%xucs=mrxl1%un&ga!1!+)h$anony%-zq8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.mindfulai.netlify.app',
+                 'mindfulai.netlify.app']
 
 
 # Application definition
