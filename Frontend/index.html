@@ -38,15 +38,22 @@
             </div>
         </div>
         <div class="notes-container">
-            <h2>upload your files here</h2>
-            <form id="uploadForm" method="POST" enctype="multipart/form-data">
-                {% csrf_token %}
-                <div id="dropArea" class="notes-img">
-                    <img src="{% static 'img/upload.png' %}" alt="Upload Icon">
-                    <input type="file" id="fileInput" name="file" accept="application/pdf">
-                </div>
-                <button type="submit">Upload</button>
-            </form>
+            <div id="pdf-notes">
+                <h3></h3>
+                <p></p>
+            </div>
+            <div id="hidden-element">
+                <h2>upload your files here</h2>
+                <form id="uploadForm" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div id="dropArea" class="notes-img">
+                        <img src="{% static 'img/upload.png' %}" alt="Upload Icon">
+                        <input type="file" id="fileInput" name="file" accept="application/pdf">
+                    </div>
+                    <button onclick="hide()"type="submit">Upload</button>
+                </form>
+            </div>
+            <div class="notes"></div>
         </div>
     </div>
     <script src="{% static 'script.js' %}"></script>

@@ -23,3 +23,12 @@ function displayInput() {
     question=inputValue
     addMessage()
 }
+
+
+
+function hide(){
+    var inputElement = document.getElementById('hidden-element')
+    const pdfElement = document.getElementById('pdf-notes')
+    inputElement.style.display='none'
+    pdfElement.style.display='block'
+}
